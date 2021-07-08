@@ -45,6 +45,7 @@ def eliminar(request):
         user = Proveedor.objects.filter(rut=id_proveedor)
         user.delete()
         return HttpResponse(user)
+        
 def modificar(request):
     if request.method == 'POST':
         id_proveedor = request.POST.get('rut')
