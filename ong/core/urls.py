@@ -1,6 +1,7 @@
 from django.urls import path, include
 from .import views
 from .views import eliminar
+from .views import modificar
 urlpatterns =[
    
     path('',views.index),
@@ -13,6 +14,7 @@ urlpatterns =[
     path('perros',views.perros),
     path('nuevo_proveedor',views.nuevo_proveedor),
     path('elminar-proveedor',eliminar,name="eliminar"),
+    path('editar_proveedor',modificar,name="modificar"),
     
    
 ]
